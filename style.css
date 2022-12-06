@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Source+Sans+Pro&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+:root {
+  --redText: #c85863;
+  --highlight: pink;
+  --hover: pink;
+  /* --redText: #79b2d7; */
+  /* --highlight: #c1e5fd; */
+  /* --hover: #e8f6ff; */
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2rem;
+}
+h5 {
+  font-size: 1.5rem;
+}
+h6 {
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p,
+a,
+label {
+  font-size: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: var(--highlight);
+}
+
+img {
+  width: 100%;
+}
+
+.topSpace {
+  padding-top: 80px;
+}
+
+.sectionMargin {
+  margin: 100px auto;
+}
+
+.navbar-collapse {
+  flex-grow: unset;
+}
+
+.customNavbar {
+  margin-inline: auto;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+
+  transition: background 0.5s;
+}
+
+.customNavbar > nav {
+  background-color: var(--redText);
+  height: 80px;
+}
+
+.customNavbar > nav > .container {
+  background-color: var(--redText);
+}
+
+.logo-link {
+  color: var(--highlight);
+}
+
+.redText {
+  color: var(--redText) !important;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+.customNavbar a {
+  color: var(--highlight);
+}
+
+.customNavbar .navbar-nav .nav-link.active {
+  color: var(--hover);
+}
+
+.customNavbar > nav a.nav-link:hover {
+  color: var(--hover) !important;
+}
+
+.customBackground {
+  background-image: url("./assets/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 800px;
+}
+
+.customBackground h1 {
+  font-weight: 900;
+  font-size: 6rem;
+  color: #3c3c3c;
+}
+
+.customCard {
+  padding: 10px;
+  background-color: var(--redText);
+  box-shadow: 0px 3px 5px var(--redText);
+  transition: all 0.3s;
+}
+
+.mainGallery .customCard:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+
+.navbar-toggler {
+  background: var(--redText);
+}
+
+.contactBanner {
+  background-image: url("./assets/contact_banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 400px;
+}
+
+.galleryBanner {
+  background-image: url("./assets/gallery_banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 400px;
+}
+
+.contactBanner h1,
+.galleryBanner h1 {
+  color: white;
+}
+
+.contactForm {
+  margin: 50px auto;
+}
+
+.contactForm h2 {
+  text-align: center;
+}
+
+.contactForm .row {
+  margin: 10px 0;
+}
+
+.contactForm input,
+.contactForm textarea {
+  width: 100%;
+}
+
+.custombtn {
+  background-color: var(--redText);
+  width: 100%;
+
+  padding: 15px 30px;
+  color: white;
+  margin-top: 30px;
+}
+
+.custombtn:hover {
+  background-color: var(--redText);
+  filter: brightness(120%);
+  color: white;
+}
+
+ul.contactUsDetails {
+  list-style: none;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.socialIcons > * {
+  transition: all 0.3s;
+  font-size: 2rem;
+  color: var(--redText) !important;
+}
+
+.socialIcons > *:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+
+.galleryContainer {
+  margin: 50px auto;
+  text-align: center;
+}
+
+.galleryContainer .mainGallery {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galleryContainer img {
+  width: 250px;
+  max-width: 90vw;
+}
+
+.galleryContainer .row {
+  margin: 30px auto;
+}
+
+.thankyou {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--redText);
+  padding: 10px;
+  text-align: center;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+  .customBackground h1 {
+    font-size: 4rem;
+  }
+  .customBackground {
+    height: 500px;
+  }
+  .customNavbar > nav a {
+    text-align: right;
+  }
+}
