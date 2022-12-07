@@ -2,12 +2,12 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
 :root {
-  --redText: #c85863;
+  /* --redText: #c85863;
   --highlight: pink;
-  --hover: pink;
-  /* --redText: #79b2d7; */
-  /* --highlight: #c1e5fd; */
-  /* --hover: #e8f6ff; */
+  --hover: pink; */
+  --redText: #53ace7;
+  --highlight: #c1e5fd;
+  --hover: #e8f6ff;
 }
 
 body,
@@ -121,7 +121,7 @@ img {
 }
 
 .customBackground {
-  background-image: url("./assets/background.png");
+  background-image: url("./assets/background-blue.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -271,6 +271,10 @@ ul.contactUsDetails {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.bgColorShane {
+  background-color: var(--redText);
 }
 
 footer {
