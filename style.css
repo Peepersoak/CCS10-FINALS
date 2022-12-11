@@ -59,7 +59,7 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: var(--highlight);
+  color: var(--redText);
 }
 
 img {
@@ -184,6 +184,20 @@ img {
   height: 400px;
 }
 
+.aboutusBanner {
+  background-image: url("./assets/aboutus.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 400px;
+}
+
 .contactBanner h1,
 .galleryBanner h1 {
   color: white;
@@ -275,6 +289,53 @@ ul.contactUsDetails {
 
 .bgColorShane {
   background-color: var(--redText);
+}
+
+.button {
+  border: none;
+  padding: 10px 30px;
+  transition: scale 0.2s;
+  border-radius: 5px;
+}
+
+.button p {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.button:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+  scale: 1.05;
+}
+
+.button.primary {
+  background-color: var(--redText);
+}
+
+.customRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.developers {
+  text-align: center;
+}
+
+.developers h4 {
+  margin-bottom: 30px;
+}
+
+.developers .dev-item {
+  flex-basis: 200px;
+}
+
+.developers .dev-item h6 {
+  margin-top: 10px;
 }
 
 footer {
