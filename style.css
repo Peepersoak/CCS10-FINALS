@@ -198,6 +198,34 @@ img {
   height: 400px;
 }
 
+.industrialBanner {
+  background-image: url("./assets/industrialbanner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 700px;
+}
+
+.carBanner {
+  background-image: url("./assets/carsbanner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  height: 700px;
+}
+
 .contactBanner h1,
 .galleryBanner h1 {
   color: white;
@@ -336,6 +364,14 @@ ul.contactUsDetails {
 
 .developers .dev-item h6 {
   margin-top: 10px;
+}
+
+.listStyle li {
+  margin: 15px 0;
+}
+
+.listStyle li:first-of-type {
+  margin-top: 0;
 }
 
 footer {
