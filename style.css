@@ -366,12 +366,24 @@ ul.contactUsDetails {
   margin-top: 10px;
 }
 
+.dev-item p {
+  margin-bottom: 0;
+}
+
 .listStyle li {
   margin: 15px 0;
 }
 
 .listStyle li:first-of-type {
   margin-top: 0;
+}
+
+.devContact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 footer {
